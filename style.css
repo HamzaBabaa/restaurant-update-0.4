@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+ }  
+ @keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+    }
+ 
+ 
+ body{margin: 0;}
+
+ div#slider figure img { width: 20%; float: left; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 10rem;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
+     
+ 
+ 
+ /*header bölümü*/
+ header > nav > a > img{
+     
+     width: 9rem;
+     height:3rem;
+ 
+ 
+ }
+ 
+ .up{
+     display: flex;
+     justify-content: space-around;
+     margin: 1rem 1rem 1rem 0rem;
+ }
+ 
+ .up > ul > li > a,
+ .up > a{
+ 
+     color: azure;
+     text-decoration: none;
+     text-transform: uppercase;
+     
+ }
+ .up > ul{
+      list-style: none;
+      display: flex;
+      gap: 14rem;
+     
+ }
+ 
+ /*----------------------*/
+ .down{
+     display: flex;
+     justify-content: space-around;
+     margin: 2rem 0rem 2rem 0rem;
+ }
+ 
+ .down > ul > li > a ,
+ .down > a{
+      color: azure;
+      text-decoration: none;
+      text-transform: uppercase;
+      
+ 
+ }
+ 
+ .down > ul{
+   list-style: none;
+   display: flex;
+   gap: 4rem;
+ 
+ }
+ 
+ /*main bölümü*/
+ 
+ 
+ /*footer bölümü*/
+ 
+ footer{
+     position: fixed;
+     width: 100%;
+     flex-direction:column;
+ }
+ 
+ 
+ 
+ footer > article{
+   position: fixed;
+   display: flex;
+   justify-content: space-around;
+   bottom: 0;
+   width: 100%;
+ 
+}
+footer > article > p{
+   color: rgb(255, 255, 255);
+
+}
+
+footer > article > a > img{
+    width: 150px;
+    height: auto;
+}
